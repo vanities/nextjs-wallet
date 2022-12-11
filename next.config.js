@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
@@ -12,5 +12,3 @@ const nextConfig = {
     scrollRestoration: true,
   },
 };
-
-module.exports = nextConfig;
