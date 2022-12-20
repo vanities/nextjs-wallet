@@ -1,7 +1,15 @@
-import type { NextPage } from "next";
+import { useWeb3Modal, Web3Button } from "@web3modal/react";
+import { useAccount } from "wagmi";
 
-const Index: NextPage = () => {
-  return <></>;
-};
+export default function HomePage() {
+  const { isConnected } = useAccount();
+  const { open } = useWeb3Modal();
 
-export default Index;
+  return (
+    <>
+      <div className="container">
+        <Web3Button />
+      </div>
+    </>
+  );
+}
