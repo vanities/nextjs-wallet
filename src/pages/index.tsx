@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useWeb3Modal, Web3Button } from "@web3modal/react";
 import { useAccount } from "wagmi";
 
